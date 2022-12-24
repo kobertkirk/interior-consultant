@@ -13,7 +13,7 @@ export default function Content() {
                 <div className="text-white font-Montserrat font-bold text-[1.4rem] md:text-[1.8rem] leading-[1.7rem] md:leading-[2.1rem] mt-[2.5rem] cursor-pointer">Read more    &#8594;</div>  
             </div>
             <div className="mt-[3.7rem] md:mt-[17.7rem] md:ml-[13.9rem]">
-                <img className="w-[35.1rem] h-[26.4rem] md:w-[73.7rem] md:h-[55.5rem] " src={require(`../images/photo1.png`)} alt=""/>
+                <img className="w-[35.1rem] h-[26.4rem] md:w-[73.7rem] md:h-[55.5rem] relative" src={require(`../images/photo1.png`)} alt=""/>
                 <div>
                     <Card/>
                 </div>
