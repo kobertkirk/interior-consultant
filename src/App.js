@@ -1,25 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
+import Header2 from './components/Header2';
+import Header from './components/Header';
+import React from 'react';
+import Content from './components/Content';
+import Footer from './components/Footer';
 
-function App() {
+export default function App() {
+  const [dimensions, setDimensions] = React.useState(window.innerWidth);
+
+  const handleResize = () => {
+      setDimensions(window.innerWidth);
+    }
+
+  React.useEffect(() => {
+    window.addEventListener("resize", handleResize, false);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col">
+      {dimensions > 980 ? 
+        <Header />
+        :
+        <Header2 />
+      }
+      <div className="flex-col flex items-center">
+      <Content />
+      <Footer/>
+      </div>
     </div>
-  );
+  )
 }
-
-export default App;
+/* npm install @mui/icons-material @mui/material @emotion/styled @emotion/react */
