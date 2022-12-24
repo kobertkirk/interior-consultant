@@ -2,8 +2,8 @@
 
 export default function Card(){
     return(
-        <div className="bg-[rgb(24, 23, 25)] w-[30rem] md:w-[41rem] h-[13.8rem] md:h-[18.9rem] ml-[4rem] md:ml-[29.5rem] mt-[-5.13rem] shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
-            <div className="flex items-center mt-[1.3rem] mb-[1.8rem] ml-[2.27rem]">
+        <div className="bg-[#181719] relative w-[30rem] md:w-[41rem] h-[13.8rem] md:h-[18.9rem] ml-[4rem] md:ml-[29.5rem] mt-[-5.13rem] shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+            <div className="flex items-center pt-[1.3rem] mb-[1.8rem] ml-[2.27rem]">
                 <img className="w-[4rem] h-[4rem] md:w-[5rem] md:h-[5rem] rounded-full" src={require(`../images/photo2.png`)} alt="avatar"/>
                 <div className="ml-[1.4rem]">
                     <p className="text-white font-Montserrat font-semibold text-[1.2rem] md:text-[1.4rem] leading-[1.5rem] md:leading-[1.7rem]">Aliza Webber</p>
