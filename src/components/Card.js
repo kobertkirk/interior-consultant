@@ -2,7 +2,7 @@
 
 export default function Card(){
     return(
-        <div className="bg-[#181719] relative w-[30rem] md:w-[41rem] h-[13.8rem] md:h-[18.9rem] ml-[4rem] md:ml-[29.5rem] mt-[-5.13rem] shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+        <div className="bg-[#181719] relative w-[30rem] md:w-[41rem] h-[13.8rem] md:h-[18.9rem] ml-[3rem] md:ml-[29.5rem] mt-[-5.13rem] shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
             <div className="flex items-center pt-[1.3rem] mb-[1.8rem] ml-[2.27rem]">
                 <img className="w-[4rem] h-[4rem] md:w-[5rem] md:h-[5rem] rounded-full" src={require(`../images/photo2.png`)} alt="avatar"/>
                 <div className="ml-[1.4rem]">
